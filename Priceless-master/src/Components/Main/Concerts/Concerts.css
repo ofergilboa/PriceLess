@@ -1,0 +1,5 @@
+.concerts {
+  margin-top: 30px;
+  flex: 1;
+  grid-auto-rows: 20vw;
+}

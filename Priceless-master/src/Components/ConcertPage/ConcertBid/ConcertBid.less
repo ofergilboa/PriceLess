@@ -1,0 +1,143 @@
+.concert-bid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 17vw;
+    background-color: none;
+    border-radius: 5px;
+    -webkit-animation-name: pop; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: pop;
+    animation-duration: 2;
+    height: 19vw;
+    margin-left: 0.5vw;
+    margin-top: 1vw;
+
+
+
+   
+}
+
+.display{
+    animation: cssAnimation 2s;
+}
+
+// .km{
+  
+//     width: 19vw;
+//   -webkit-animation-name: pop; /* Safari 4.0 - 8.0 */
+//   -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+//   animation-name: pop;
+//   animation-duration: 10s;
+// }
+
+// @-webkit-keyframes pop {
+//     from{ width: 0vw;     overflow-x: hidden;
+//     } 
+//     to{ width: 19vw;}
+//   }
+  
+  @keyframes pop {
+    from{ width: 0vw;     overflow-x: hidden;
+    } 
+    to{ width: 19vw; }
+
+  }
+
+
+.bidButton{
+    border: 1.5px solid #91c8d6;
+    padding: 0.6vw;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin: auto;
+    box-shadow: 0px 2px 15px 5px #91c8d6;
+    color: #e79212;
+    animation: cssAnimation 2s;
+
+}
+
+.bidButton:hover{
+    // box-shadow: 0 0 1em #2fb450;
+    color: #178638;
+    border: 1.5px solid #1dc73ac2;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+}
+
+.lastBid{
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.2vw;
+    animation: cssAnimation 2s;
+}
+
+#bidTime{
+    font-family: 'Changa', sans-serif;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.7vw;
+    color: #6cbed3;
+    animation: cssAnimation 2s;
+    animation-fill-mode: forwards;
+    opacity: 0; 
+}
+
+
+
+@keyframes cssAnimation {
+    0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3;  }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+
+
+  }
+
+
+.timeBid{
+    font-weight: bold;
+    margin-right: 25vw;
+    font-size: 1.5vw;
+    margin: auto;
+    animation: cssAnimation 3s;
+    
+}
+
+
+#bid{
+    height: 3vw;
+    font-size: 2vw;
+    background: transparent;
+    animation: cssAnimation 3s;
+    // border: none;
+}
+
+.glow{
+    border: 1.4vh dotted #ffe600;
+    animation-name: glow;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    height: 21vw;
+    width: 20vw;
+    margin-top: 10vw;
+    background-color: rgba(255, 255, 255, 0.705);
+    margin-left: 1vw;
+    border-radius:10px
+
+}
+
+@keyframes glow{
+    from{
+        border: 2vh dotted #ffffff;
+    }
+    to{
+        border: 2vh dotted #c7d7db;
+    }
+}
+
+

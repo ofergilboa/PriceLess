@@ -1,0 +1,52 @@
+.navbar {
+  z-index: 100;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 43px;
+  align-items: center;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 10px 7px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 100%;
+  cursor: pointer;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+  height: 100%;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+a img {
+  padding-bottom: 0.1vw;
+}
+.navbar > a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.navbar a.active {
+  display: flex;
+  background: #ddd;
+  color: #c77979;
+  height: 100%;
+  text-align: center;
+}
+.navbar #logo:hover {
+  background: #333;
+}
+.logout {
+  float: right !important;
+}

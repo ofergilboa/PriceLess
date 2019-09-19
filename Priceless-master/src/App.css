@@ -1,0 +1,104 @@
+body{
+  height: 100vh;
+}
+.App {
+  /* text-align: center; */
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+font-family: 'Livvic', sans-serif;
+font-family: 'Open Sans', sans-serif;
+/* font-family: 'Noto Sans', sans-serif; */
+margin-top: 51px;
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.brk-btn {
+  cursor: pointer;
+  position: relative;
+  background: none;
+  color: #4A90E2;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid #4A90E2;
+  padding: 0.5em 1em;
+  margin-left: 5vw;
+}
+.brk-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  right: 20%;
+  top: -0.21em;
+  transform: skewX(-45deg);
+  -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  left: 20%;
+  bottom: -0.25em;
+  transform: skewX(45deg);
+  -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn:hover::before {
+  right: 80%;
+}
+.brk-btn:hover::after {
+  left: 80%;
+}
+
+
+
+.concerts{
+  display: grid;
+  grid-template-columns: 0.7fr 0.4fr 0.7fr;
+}
+
+.favoriteTitle{
+  position: fixed;
+  font-size: 2vw;
+  margin-left: 22vw;
+  font-weight: bold;
+  margin-top: 0.2vw;
+}

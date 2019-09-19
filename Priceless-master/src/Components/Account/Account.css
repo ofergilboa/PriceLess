@@ -1,0 +1,63 @@
+.account {
+  font-size: 1.2vw;
+  border: 5px solid #706a6d25;
+  width: 67vw;
+  margin: auto;
+  border-radius: 35px;
+  margin-top: 6vw;
+}
+.user-concerts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  margin: 2vw;
+}
+.hello {
+  font-weight: bold;
+  padding-bottom: 0.5vw;
+  font-size: 1.5vw;
+}
+.yourConcert {
+  margin-top: 1vw;
+  margin-left: 2.3vw;
+  font-size: 1.5vw;
+  color: #f0417c;
+  -webkit-animation-name: colors;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 10s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: colors;
+  animation-duration: 10s;
+}
+@-webkit-keyframes colors {
+  0% {
+    color: #e940b1;
+  }
+  25% {
+    color: #e6cb32;
+  }
+  50% {
+    color: #e69926;
+  }
+  100% {
+    color: #f0417c;
+  }
+}
+@keyframes colors {
+  0% {
+    color: #e940b1;
+  }
+  25% {
+    color: #e6cb32;
+  }
+  50% {
+    color: #e69926;
+  }
+  100% {
+    color: #f0417c;
+  }
+}
+.user-info {
+  margin-left: 1.3vw;
+  width: 25vw;
+  padding: 1vw;
+}

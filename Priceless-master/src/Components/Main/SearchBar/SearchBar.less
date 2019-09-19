@@ -1,0 +1,117 @@
+.search-bar {
+  background-color: antiquewhite;
+  margin: 10px;
+  margin-top: 30px;
+  top: 100px;
+  height: 84vh;
+  margin-bottom: 80px;
+  width: 18vw;
+  background: #fff;
+  overflow: hidden;
+  padding-left: 15px;
+  border-radius: 7px;
+  margin-left: 44px;
+
+}
+
+#search-bar-header {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 3px;
+}
+// .input-type {
+//   padding: 12px 20px;
+//   margin: 8px 0;
+//   border: none;
+//   border-bottom: 2px solid #4A90E2;
+//   background-color: transparent;
+//   outline: 0ch;
+//   outline-style: hidden;
+//   font-size: 1rem;
+// }
+// .input-type[type=number] {
+//   width: 40px;
+// }
+.DayPicker-wrapper {
+  font-size: 0.9rem;
+}
+.Selectable .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
+  background-color: #f0f8ff !important;
+  color: #4a90e2;
+}
+.Selectable .DayPicker-Day {
+  border-radius: 0 !important;
+  font-size: 0.8rem;
+}
+.Selectable .DayPicker-Day--start {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+.Selectable .DayPicker-Day--end {
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+.DayPicker {
+  display: inline-block;
+}
+.RangeExample #selected {
+  font-size: 0.8rem;
+}
+.slider {
+  width: 16vw;
+}
+
+
+input{
+  display:block;
+  // height:50px;
+  // width:90%;
+  margin:0 auto;
+  border:none;
+  &::placeholder{
+    -webkit-transform:translateY(0px);
+      transform:translateY(0px);
+    -webkit-transition:.5s;
+      transition:.5s;
+  }
+  &:hover,
+  &:focus,
+  &:active:focus{
+    color:#ff5722;
+    outline:none;
+    border-bottom:1px solid #ff5722;
+    &::placeholder{
+      color:#ff5722;
+      position:relative;
+      -webkit-transform:translateY(-20px);
+      transform:translateY(-20px);
+      
+    }
+  }
+}
+.search-bar input[type=text]{
+      width: 180px;
+      height:50px;
+}
+
+.search-bar input[type=number]{
+  width:60px;
+  height:50px;
+
+}
+input[type=date]{
+width:160px;
+height:50px;
+
+}
+input[type=time]{
+width:160px;
+height:50px;
+
+}
+
+.input-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
