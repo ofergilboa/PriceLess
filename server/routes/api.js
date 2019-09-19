@@ -3,7 +3,7 @@ const express = require('express')
 const router = express.Router()
 const moment = require('moment')
 const axios = require('axios')
-const sequelize = new Sequelize('mysql://root:@localhost/priceless')
+const sequelize = new Sequelize('mysql://root:Guprd214!@localhost/priceless')
 const cron = require('node-cron')
 const sendMailFunc = require("./../send-email")
 
